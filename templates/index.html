@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>index</title>
+   <meta name="robots" content="noindex,nofollow"/>
+   <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+   <style>
+        body {
+            font-family: monospace;
+            /*background-color: var(--tg-theme-bg-color, #000000);*/
+            /*color: var(--tg-theme-text-color, #ffffff);*/
+            background-color: #ffffff;
+            color: #000000;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+            /*color-scheme: dark;*/
+        }
+
+        a {
+            color: #00ff00;
+        }
+
+        button {
+            display: inline-block;
+            font-size: 14px;
+            padding: 0.5% 0.5%;
+            /*background: var(--tg-theme-button-color);*/
+            /*color: var(--tg-theme-button-text-color);*/
+            border: none;
+            border-radius: 4px;
+            color: #ffffff;
+            background-color: #333333;
+        }
+
+        button:hover {
+            background-color: #222222;
+        }
+
+        section {
+            padding: 0.5% 1% 1% 1%;
+            text-align: center;
+        }
+
+        p {
+            margin: 40px 0 15px;
+        }
+
+        ul {
+            text-align: left;
+        }
+
+        li {
+            /*color: var(--tg-theme-hint-color, #a8a8a8);*/
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 7px;
+        }
+
+        pre {
+            background: #222222;
+            border-radius: 0.5%;
+            /*padding: 0.25% 0.25%;*/
+            margin: 7px 0;
+            /*word-break: break-all;*/
+            word-break: break-word;
+            white-space: pre-wrap;
+            text-align: left;
+        }
+
+        #fixed_wrap {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            transform: translateY(100vh);
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 45%;
+            height: auto;
+            object-fit: cover;
+            /*object-position: bottom;*/
+        }
+        .slider {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+                }
+
+        .slider img {
+                    object-fit: cover;
+                    }
+
+        .title{
+	        font-size: 250%;
+            display: inline-block;
+            padding: 0.5% 1% 1% 1%;
+	        text-align: left;
+            hyphens: auto;
+            /*display: grid;*/
+            /*grid-template-columns: 1fr;*/
+            /*grid-template-rows: auto auto;*/
+            /*gap: 10px;*/
+            }
+
+        .link {
+            display: inline-block;
+            padding: 0.5% 1% 1% 1%;
+            }
+
+        footer{
+            position: absolute;
+            font-size: 14px;
+	        padding-top: 1%;
+            padding-left: 57%;
+	        text-align: right;
+        }
+
+        figcaption {
+            padding: 0.25% 0.5% 0.25% 0%;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                    color: #ffffff;
+                    background: #000000;
+            }
+        }
+        .computer-scheme {
+            position: relative;
+            width: 100%;
+            /*max-width: 800px;*/
+            /*padding: 4px;*/
+            /*padding: 0.5% 1% 1% 1%;*/
+            text-align: center;
+}
+        .img-computer {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .computer-button {
+            display: inline-block;
+            font-size: 45%;
+            padding: 0.25% 0.25%;
+            border: none;
+            /*border-radius: 1%;*/
+            /*background-color: var(--tg-theme-button-color, #6600ff);*/
+            background-color: #363b39;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .knopka {
+            list-style-type: none;
+            padding: 0;
+        }
+        .knopka li {
+            text-align: left;
+
+        }
+        .knopka button {
+            width: auto;
+            text-align: left;
+        }
+
+        .knopka a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+
+        .knopka img {
+            display: inline;
+        }
+
+        #table-of-contents0-section + #table-of-contents-section{
+            margin-top: -50px
+        }
+
+        #table-of-contents0-section p {
+            margin-bottom: 2px;
+        }
+
+        #table-of-contents0-section-p, #table-of-contents0-section-li {
+            display: inline;
+        }
+
+    </style>
+
+</head>
+
+<div id = "wrap" style="display: flex; flex-direction: column;">
+	<header>
+        <div class = "title">
+            Веб-справочник
+        </div>
+        <div class="link">
+            <a href = "https://github.com/Geodeziy/W-0723" id="link">Github</a>
+        </div>
+    </header>
+</div>
+
+<body style="visibility: visible;">
+
+<section id="table-of-contents0-section" style="text-align: left; margin-bottom: 10px;">
+    <p style="margin-top: 5px; margin-bottom: 1px">В справочнике представлено два раздела:</p>
+    <li id="table-of-contents0-section-li" style="list-style-type: none"><a href="https://geodeziy.github.io/W-0723/templates/index.html">Раздел компьютер.</a></li>
+    <p id="table-of-contents0-section-p">(Вы находитесь здесь)</p>
+    <li style="list-style-type: none"><a href="https://geodeziy.github.io/W-0723/templates/index1.html">Раздел числа и символы</a></li>
+</section>
+
+<section id="table-of-contents-section">
+<div class="knopka">
+    <p style="text-align: left">В состав компьютера входят:</p>
+    <li><a href="#processor-section"><img src="https://geodeziy.github.io/W-0723/img/cpu.png" style="width: auto; height: 1em;"> Процессор</a></li>
+    <li><a href="#ram-section"><img src="https://geodeziy.github.io/W-0723/img/ram.png" style="width: auto; height: 1em;"> Оперативная память</a></li>
+    <li><a href="#graphics-card-section"><img src="https://geodeziy.github.io/W-0723/img/videocard.png" style="width: 1em; height: 1em;"> Видеокарта</a></li>
+    <li><a href="#storage-section"><img src="https://geodeziy.github.io/W-0723/img/storage.png" style="width: 1em; height: 1em;"> Устройство хранения информации</a></li>
+    <li><a href="#motherboard-section"><img src="https://geodeziy.github.io/W-0723/img/motherboard.png" style="width: 1em; height: 1em;"> Материнская плата</a></li>
+    <li><a href="#psu-section"><img src="https://geodeziy.github.io/W-0723/img/psu.png" style="width: 1em; height: 1em;"> Блок питания компьютера</a></li>
+    <li><a href="#cooling-system-section"><img src="https://geodeziy.github.io/W-0723/img/coolingsystem.png" style="width: 1em; height: 1em;"> Система охлаждения</a></li>
+    <p style="text-align: left; margin-top: 0">Также компьютер не работал бы без</p>
+    <li><a href="#bios-section">BIOS</a></li>
+</div>
+</section>
+
+<section id="processor-section" style="margin-top: -20px">
+    <h1 align="left" style="margin-bottom: auto">Центральный процессор</h1>
+    <pre>Центральный процессор — электронный блок либо интегральная схема, исполняющая машинные инструкции (код программ), главная часть аппаратного обеспечения компьютера или программируемого логического контроллера.</pre>
+    <a href="#" title="Вернуться к началу" class="topbutton" style="color: #00ff00">Наверх</a>
+    <button id="btn1" onclick="sendMessage('id_1');">Сохранить в своём списке</button>
+</section>
+<section id="ram-section">
+    <h1 align="left" style="margin-bottom: auto">RAM (ОЗУ)</h1>
+    <pre>Оперативная память (ОЗУ) — это форма электронной памяти компьютера, которую можно читать и изменять в любом порядке, обычно используемую для хранения рабочих данных и машинного кода. Устройство оперативной памяти позволяет считывать или записывать элементы данных практически за одинаковое время независимо от физического расположения данных внутри памяти, в отличие от других носителей данных с прямым доступом.</pre>
+    <figure>
+        <img src="https://geodeziy.github.io/W-0723/img/Drum_Memory_in_Moscow_Politechnical_Museum.jpg"
+            alt="Изображение магнитного барабана типа МБ-11."/>
+        <figcaption>Изображение магнитного барабана типа МБ-11, использовавшегося в качестве компьютерной памяти в 1950-х — начале 1960-х годов.</figcaption>
+        <a href="#" title="Вернуться к началу" class="topbutton" style="color: #00ff00">Наверх</a>
+        <button id="btn3" onclick="sendMessage('id_2');">Сохранить в своём списке</button>
+    </figure>
+</section>
+<section id="graphics-card-section">
+    <h1 align="left" style="margin-bottom: auto">Видеокарта</h1>
+    <pre>Графическая карта (также называемая видеокартой) — это компьютерная плата расширения, которая создаёт поток графического вывода на устройство отображения, такое как монитор. Основным компонентом видеокарты является графический процессор, или GPU, который выполняет необходимые вычисления. Однако аббревиатура "GPU" также может неправильно использоваться для обозначения всей видеокарты.</pre>
+    <a href="#" title="Вернуться к началу" class="topbutton" style="color: #00ff00">Наверх</a>
+    <button id="btn4" onclick="sendMessage('id_3');">Сохранить в своём списке</button>
+</section>
+<section id="storage-section">
+    <h1 align="left" style="margin-bottom: auto">Устройство хранения информации</h1>
+    <pre>Устройство хранения информации предназначено для хранения информации. Сейчас встречаются два типа таких устройств: HDD (накопитель на жёстких магнитных дисках) и SDD (твердотельный накопитель). Первый работает на принципе магнитной записи. Он записывает информации на вращающиеся магнитные диски или магнитные ленты. Второй тип накопителей представляет собой устройства, хранящие данные в микросхемах. Они обеспечивают более высокие скорости доступа к данным, чем накопители на магнитных лентах.</pre>
+    <a href="#" title="Вернуться к началу" class="topbutton" style="color: #00ff00">Наверх</a>
+    <button id="btn5" onclick="sendMessage('id_4');">Сохранить в своём списке</button>
+</section>
+<section id="motherboard-section">
+    <h1 align="left" style="margin-bottom: auto">Материнская (системная) плата</h1>
+    <pre>Материнская (системная) плата — это основная печатная плата в компьютерах общего назначения и других расширяемых системах. Она поддерживает и обеспечивает связь между многими важнейшими электронными компонентами системы, такими как центральный процессор (CPU) и память, а также обладает разъемами для других периферийных устройств. В отличие от объединительной платы, материнская плата обычно содержит важные подсистемы, такие как центральный процессор, контроллеры ввода/вывода набора микросхем и памяти, интерфейсные разъемы и другие компоненты, интегрированные для общего использования.</pre>
+    <a href="#" title="Вернуться к началу" class="topbutton" style="color: #00ff00">Наверх</a>
+    <button id="btn6" onclick="sendMessage('id_5');">Сохранить в своём списке</button>
+</section>
+<section id="psu-section">
+    <h1 align="left" style="margin-bottom: auto">Блок питания</h1>
+    <pre>Встроенный источник электропитания компьютера — устройство, предназначенное для преобразования напряжения переменного тока от сети в напряжение постоянного тока с целью питания компьютера или компьютера-сервера. Большинство современных источников питания для настольных персональных компьютеров соответствуют спецификации ATX, которая включает в себя форм-фактор и допуски по напряжению. Когда блок питания ATX подключен к электросети, он всегда обеспечивает 5-вольтовое резервное питание (5VSB), чтобы обеспечить работу компьютера в режиме ожидания и некоторых периферийных устройств. Блоки питания ATX включаются и выключаются по сигналу с материнской платы. Они также подают сигнал на материнскую плату, указывающий, когда напряжение постоянного тока соответствует заданному, чтобы компьютер мог безопасно включиться и загрузиться. Самым последним стандартом блока питания ATX является версия 3.0, по состоянию на середину 2022 года.</pre>
+    <a href="#" title="Вернуться к началу" class="topbutton" style="color: #00ff00">Наверх</a>
+    <button id="btn7" onclick="sendMessage('id_6');">Сохранить в своём списке</button>
+</section>
+<section id="cooling-system-section">
+    <h1 align="left" style="margin-bottom: auto">Система охлаждения</h1>
+    <pre>Система охлаждения компьютера — набор средств для отвода тепла (т.е. охлаждения, холодильная установка) от нагревающихся в процессе работы компьютерных компонентов (процессор, чипсет, транзисторы и диоды, и пр.). Существуют различные способы отвода тепла: воздушное, жидкостное, термоэлектрическое, с помощью фазового перехода.</pre>
+    <a href="#" title="Вернуться к началу" class="topbutton" style="color: #00ff00">Наверх</a>
+    <button id="btn8" onclick="sendMessage('id_7');">Сохранить в своём списке</button>
+</section>
+<section id="bios-section">
+    <h1 align="left" style="margin-bottom: auto">BIOS</h1>
+    <pre>BIOS (basic input/output system — «базовая система ввода-вывода»), также БСВВ — набор микропрограмм, реализующих низкоуровневые API для работы с аппаратным обеспечением компьютера, а также создающих необходимую программную среду для запуска операционной системы у IBM PC-совместимых компьютеров.</pre>
+    <a href="#" title="Вернуться к началу" class="topbutton" style="color: #00ff00">Наверх</a>
+    <button id="btn2" onclick="sendMessage('id_8');">Сохранить в своём списке</button>
+</section>
+
+<footer>
+    <p><a href="#" title="Вернуться к началу" class="topbutton" style="color: #00ff00">^Наверх</a>
+        <br>Какая-то информация об авторском праве
+    </p>
+</footer>
+
+<script src="https://webappcontent.telegram.org/js/jquery.min.js"></script>
+<script>
+   Telegram.WebApp.ready();
+
+    var initData = Telegram.WebApp.initData || '';
+    var initDataUnsafe = Telegram.WebApp.initDataUnsafe || {};
+    Telegram.WebApp.expand();
+
+    function webviewClose() {
+        Telegram.WebApp.close();
+    }
+
+    $('#main_btn').toggle(!!initDataUnsafe.query_id);
+    $('#with_webview_btn').toggle(!!initDataUnsafe.query_id && !initDataUnsafe.receiver);
+    // $('#data_btn').toggle(!initDataUnsafe.query_id || !initDataUnsafe.receiver);
+    $('#webview_data').html(JSON.stringify(initDataUnsafe, null, 2));
+    $('body').css('visibility', '');
+    Telegram.WebApp.MainButton
+        .setText('Закрыть веб-просмотр')
+        .hide()
+        .onClick(function () {
+            webviewClose();
+        });
+
+    function toggleMainButton(el) {
+        var mainButton = Telegram.WebApp.MainButton;
+        if (mainButton.isVisible) {
+            mainButton.hide();
+            el.innerHTML = 'Показать кнопку';
+        } else {
+            mainButton.show();
+            el.innerHTML = 'Скрыть кнопку';
+        }
+    }
+
+    function sendMessage(st){
+        Telegram.WebApp.sendData(st);
+    }
+
+</script>
+<script>
+    const slider = document.querySelector('.slider');
+    const prevButton = document.querySelector('.prev-button');
+    const nextButton = document.querySelector('.next-button');
+    const slides = Array.from(slider.querySelectorAll('img'));
+    const slideCount = slides.length;
+    let slideIndex = 0;
+
+    prevButton.addEventListener('click', showPreviousSlide);
+    nextButton.addEventListener('click', showNextSlide);
+
+    function showPreviousSlide() {
+      slideIndex = (slideIndex - 1 + slideCount) % slideCount;
+      updateSlider();
+    }
+
+    function showNextSlide() {
+      slideIndex = (slideIndex + 1) % slideCount;
+      updateSlider();
+    }
+
+    function updateSlider() {
+      slides.forEach((slide, index) => {
+        if (index === slideIndex) {
+          slide.style.display = 'block';
+        } else {
+          slide.style.display = 'none';
+        }
+      });
+    }
+
+    updateSlider();
+</script>
+<script>
+    document.getElementById("toggleButton").addEventListener("click", function() {
+        var element = document.querySelector(".computer-scheme");
+        element.classList.toggle("hidden");
+});
+
+    document.getElementById("processor").addEventListener("click", function() {
+        window.location.href = "#processor-section";
+});
+    document.getElementById("ram").addEventListener("click", function() {
+        window.location.href = "#ram-section";
+});
+    document.getElementById("motherboard").addEventListener("click", function() {
+        window.location.href = "#motherboard-section";
+});
+    document.getElementById("graphics-card").addEventListener("click", function() {
+        window.location.href = "#graphics-card-section";
+});
+    document.getElementById("disk-storage").addEventListener("click", function() {
+        window.location.href = "#storage-section";
+});
+    document.getElementById("cooling-system").addEventListener("click", function() {
+        window.location.href = "#cooling-system-section";
+});
+    document.getElementById("psu").addEventListener("click", function() {
+        window.location.href = "#psu-section";
+});
+</script>
+</body>
+</html>

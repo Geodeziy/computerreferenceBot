@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>index1</title>
+   <meta name="robots" content="noindex,nofollow"/>
+   <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+   <style>
+        body {
+            font-family: monospace;
+            /*background-color: var(--tg-theme-bg-color, #000000);*/
+            /*color: var(--tg-theme-text-color, #ffffff);*/
+            background-color: #ffffff;
+            color: #000000;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+            /*color-scheme: dark;*/
+        }
+
+        a {
+            color: #00ff00;
+        }
+
+        button {
+            display: inline-block;
+            font-size: 14px;
+            padding: 0.5% 0.5%;
+            /*background: var(--tg-theme-button-color);*/
+            /*color: var(--tg-theme-button-text-color);*/
+            border: none;
+            border-radius: 4px;
+            color: #ffffff;
+            background-color: #333333;
+        }
+
+        button:hover {
+            background-color: #222222;
+        }
+
+        section {
+            padding: 0.5% 1% 1% 1%;
+            text-align: center;
+        }
+
+        p {
+            margin: 40px 0 15px;
+        }
+
+        ul {
+            text-align: left;
+        }
+
+        li {
+            /*color: var(--tg-theme-hint-color, #a8a8a8);*/
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 7px;
+        }
+
+        pre {
+            background: #222222;
+            border-radius: 0.5%;
+            /*padding: 0.25% 0.25%;*/
+            margin: 7px 0;
+            /*word-break: break-all;*/
+            word-break: break-word;
+            white-space: pre-wrap;
+            text-align: left;
+        }
+
+        #fixed_wrap {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            transform: translateY(100vh);
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 45%;
+            height: auto;
+            object-fit: cover;
+            /*object-position: bottom;*/
+        }
+        .slider {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+                }
+
+        .slider img {
+                    object-fit: cover;
+                    }
+
+        .title{
+	        font-size: 250%;
+            display: inline-block;
+            padding: 0.5% 1% 1% 1%;
+	        text-align: left;
+            hyphens: auto;
+            /*display: grid;*/
+            /*grid-template-columns: 1fr;*/
+            /*grid-template-rows: auto auto;*/
+            /*gap: 10px;*/
+            }
+
+        .link {
+            display: inline-block;
+            padding: 0.5% 1% 1% 1%;
+            }
+
+        footer{
+            position: absolute;
+            font-size: 14px;
+	        padding-top: 1%;
+            padding-left: 57%;
+	        text-align: right;
+        }
+
+        figcaption {
+            padding: 0.25% 0.5% 0.25% 0%;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                    color: #ffffff;
+                    background: #000000;
+            }
+        }
+        .computer-scheme {
+            position: relative;
+            width: 100%;
+            /*max-width: 800px;*/
+            /*padding: 4px;*/
+            /*padding: 0.5% 1% 1% 1%;*/
+            text-align: center;
+}
+        .img-computer {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .computer-button {
+            display: inline-block;
+            font-size: 45%;
+            padding: 0.25% 0.25%;
+            border: none;
+            /*border-radius: 1%;*/
+            /*background-color: var(--tg-theme-button-color, #6600ff);*/
+            background-color: #363b39;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #table-of-contents0-section-p, #table-of-contents0-section-li {
+            display: inline;
+        }
+
+        #number-base-converter-section p {
+            margin-top: 1%;
+            margin-bottom: 0.5%;
+        }
+
+        #number-base-converter-section div {
+            margin-top: 0.5%;
+        }
+
+        #animation-container {
+            /*display: flex;*/
+            justify-content: center;
+            overflow: hidden;
+            margin: 0;
+            /*padding: 0 0 0 1%;*/
+        }
+
+        #animation {
+            font-family: monospace;
+            white-space: pre-wrap;
+            /*white-space: pre-line;*/
+            line-height: 1;
+            /*text-align: center;*/
+        }
+
+        #asciiText {
+            white-space: pre-wrap;
+            font-family: monospace;
+            font-size: 1vw;
+        }
+
+    </style>
+
+</head>
+
+<div id = "wrap" style="display: flex; flex-direction: column;">
+	<header>
+        <div class = "title" style="font-family: monospace">
+            Раздел числа и символы
+        </div>
+        <div class="link">
+            <a href = "https://github.com/Geodeziy/W-0723">Github</a>
+        </div>
+    </header>
+</div>
+
+<body>
+
+    <section id="table-of-contents0-section" style="text-align: left">
+        <p style="margin-top: 5px; margin-bottom: 1px">Разделы справочника:</p>
+        <li id="table-of-contents0-section-li" style="list-style-type: none"><a href="https://geodeziy.github.io/W-0723/templates/index.html">Раздел компьютер.</a></li>
+        <li style="list-style-type: none"><a href="https://geodeziy.github.io/W-0723/templates/index1.html">Раздел числа и символы</a> <p id="table-of-contents0-section-p">(Вы находитесь здесь)</p></li>
+    </section>
+
+    <section id="introduction-section" style="margin-top: -20px">
+        <h1 align="left" style="margin-bottom: auto">Числа в компьютерах</h1>
+        <pre>В основе работы компьютера лежат транзисторы, которые могут быть в одном из двух состояний: включённом или выключенном, что соответствует двоичным числам 1 и 0 соответственно. Двоичную систему счисления используют в компьютерах из-за трёх факторов: простота изготовления элементов, оперирующих значениями, возникающая из-за этого, помехоустойчивость и быстродействие. Поэтому удобно использовать двоичную систему счисления для работы компьютера. Большинство информации может быть представлено в виде битов, которые являются основой всего, что делает компьютер.</pre>
+        <a href="#" title="Вернуться к началу" class="topbutton" style="color: #00ff00">Наверх</a>
+        <button id="btn1" onclick="sendMessage('id_11');">Сохранить в своём списке</button>
+    </section>
+
+    <section id="number-base-converter-section">
+        <h1 align="left" style="margin-bottom: auto">Числа в компьютерах. Изменение системы счисления</h1>
+        <h3 align="left" style="margin-bottom: auto">Перевод десятичного числа в другую систему счисления</h3>
+        <pre>Для того чтобы перевести десятичное число в другую систему счисления, нужно поделить его с остатком на основание системы счисления. Делить нужно до тех пор, пока в частном не будет 0. Результат нужно записать справа налево, то есть последний остаток станет первой цифрой нового числа.</pre>
+        <h3 align="left" style="margin-bottom: auto">Перевод числа иной системы счисления в десятичную систему счисления</h3>
+        <pre>Чтобы перевести число в десятичную систему счисления, нужно разбить число на цифры, пронумеровать их справа налево, начиная с 0. Цифры числа нужно умножить на основание системы счисления, возведённое в номер этой цифры.
+Например, число A61<sub>16</sub> переведём в десятичную систему счисления. 1 - номер 0, 6 - номер 1, A это 10, номер 2. Проделаем такую операцию: 10*16<sup>2</sup> + 6*16<sup>1</sup> + 1*16<sup>0</sup>. Значит число A61<sub>16</sub> равно 10*256 + 96 + 1, то есть 2657<sub>10</sub>.</pre>
+        <pre>Здесь можно преобразовать десятичное число в другую систему счисления.</pre>
+        <label for="number">Введите число:</label>
+        <input type="text" id="number">
+        <button onclick="convert()">Конвертировать</button>
+        <p style="font-size: 20px">Конвертированные числа:</p>
+        <div id="binary"></div>
+        <div id="octal"></div>
+        <div id="decimal"></div>
+        <div id="hexadecimal" style="margin-bottom: 1%"></div>
+        <a href="#" title="Вернуться к началу" class="topbutton" style="color: #00ff00">Наверх</a>
+        <button id="btn2" onclick="sendMessage('id_12');">Сохранить в своём списке</button>
+    </section>
+
+    <section id="symbols-section0">
+        <h1 align="left" style="margin-bottom: auto">Символы в компьютерах. Кодировки</h1>
+        <pre>Для того чтобы компьютер мог работать с текстом, нужно было создать кодировку символов, которая бы представляла символы в виде двоичного кода. Одной из таких первых удачных кодировок стала ASCII.
+В ней каждый символ кодируется 8-ю битами, то есть всего может быть закодировано 256 символов. Первые 7 бит (128 символов, 2<sup>7</sup>=128) в этой кодировке были отданы под символы латинского алфавита, управляющие символы (такие как переносы строк, табуляция и т.д.) и грамматические символы. Остальные отводились под национальные языки.
+Из-за этого небольшого количества места под национальные языки, появилось множество национальных кодировок, что, в свою очередь, привело бы к тому, что для каждого документа пришлось бы указывать кодировку, во избежание появления нечитаемого текста.</pre>
+        <a href="#" title="Вернуться к началу" class="topbutton" style="color: #00ff00">Наверх</a>
+        <button id="btn3" onclick="sendMessage('id_13');">Сохранить в своём списке</button>
+    </section>
+
+    <section id="symbols-section1">
+        <h1 align="left" style="margin-bottom: auto">Символы в компьютерах. ASCII-живопись</h1>
+        <pre>Так как в первых компьютерах не было возможности отображать графику, программисты заинтересовались возможностью отображения графики с помощью текстовых символов и вывода полученных изображений на экран терминала и печать. Начиная с 1960-х годов, это стало популярным развлечением программистов: написать программу, которая «рисует» заданное изображение текстовыми символами. Так появилось ASCII-искусство. Так называют как сам метод графического дизайна, который использует 95 символов из кодировки ASCII, так и искусство исполнения изображений из текста в целом.
+Позднее появилась ANSI-графика, которая была расширением ASCII-графики. Она использовала все 224 печатных символа, 16 цветов шрифта и 8 фоновых цветов, поддерживаемых драйвером ANSI.SYS, который использовался в системе MS-DOS.</pre>
+        <a href="#" title="Вернуться к началу" class="topbutton" style="color: #00ff00">Наверх</a>
+        <button id="btn4" onclick="sendMessage('id_14');">Сохранить в своём списке</button>
+    </section>
+
+    <section id="animation-section">
+        Здесь представлен пример ASCII-надписи.
+        <div id="animation-container">
+            <pre id="animation"></pre>
+        </div>
+    </section>
+
+    <section>
+        Ещё один пример ASCII-надписи.
+        <pre id="asciiText">
+
+      db       .M"""bgd   .g8"""bgd `7MMF'`7MMF'
+     ;MM:     ,MI    "Y .dP'     `M   MM    MM
+    ,V^MM.    `MMb.     dM'       `   MM    MM     `7MMF'`7MMF' ,6"Yb.    VM""MMF'`7MM""""MMF'`7MMF'`7MMF',p6"bo `7MMF'
+   ,M  `MM      `YMMNq. MM            MM    MM       MM    MM  8)   MM    ,9  MM    MM    MM    MM   ,MM 6M'  OO   MM
+   AbmmmqMA   .     `MM MM.           MM    MM mmmmm MMmmmmMM   ,pm9MM    d'  MM    MM    MM    MM ,' MM 8M        MM""Yq.
+  A'     VML  Mb     dM `Mb.     ,'   MM    MM       MM    MM  8M   MM   ,9   MM    MM    MM    MM'   MM YM.    ,  MM   j8 ,,
+.AMA.   .AMMA.P"Ybmmd"    `"bmmmd'  .JMML..JMML.   .JMML..JMML.`Moo9^Yo.gMmmmmMMm .JMML..JMML..JMML..JMML.YMbmd' .JMMmmm9' db
+                                                                        V       V
+        </pre>
+    </section>
+
+    <section id="symbols-section2">
+        <h1 align="left" style="margin-bottom: auto">Символы в компьютерах. Unicode</h1>
+        <pre>Unicode — таблица символов, которая состоит из 1 114 112 позиций, разделённых на 17 блоков по 65536 символов в каждом. Значит, ёмкость символов юникода составляет от 0 до 10FFFF (в шестнадцатиричном виде).
+Записываются символы в шестнадцатиричном виде с приставкой «U+», например, U+0451.
+Коды в стандарте Юникод разделены на несколько областей. Область с кодами от U+0000 до U+007F содержит символы набора ASCII, и коды этих символов совпадают с их кодами в ASCII. Далее расположены области символов других систем письменности, знаки пунктуации и технические символы. Часть кодов зарезервирована для использования в будущем. Под символы кириллицы выделены области знаков с кодами от U+0400 до U+052F, от U+2DE0 до U+2DFF, от U+A640 до U+A69F.</pre>
+        <a href="#" title="Вернуться к началу" class="topbutton" style="color: #00ff00">Наверх</a>
+        <button id="btn5" onclick="sendMessage('id_15');">Сохранить в своём списке</button>
+    </section>
+
+    <footer>
+        <p><a href="#" title="Вернуться к началу" class="topbutton" style="color: #00ff00">^Наверх</a>
+            <br>Какая-то информация об авторском праве
+        </p>
+    </footer>
+</body>
+<script src="https://webappcontent.telegram.org/js/jquery.min.js"></script>
+<script>
+    Telegram.WebApp.ready();
+
+    var initData = Telegram.WebApp.initData || '';
+    var initDataUnsafe = Telegram.WebApp.initDataUnsafe || {};
+    Telegram.WebApp.expand();
+
+    function webviewClose() {
+        Telegram.WebApp.close();
+    }
+
+    $('#main_btn').toggle(!!initDataUnsafe.query_id);
+    $('#with_webview_btn').toggle(!!initDataUnsafe.query_id && !initDataUnsafe.receiver);
+    // $('#data_btn').toggle(!initDataUnsafe.query_id || !initDataUnsafe.receiver);
+    $('#webview_data').html(JSON.stringify(initDataUnsafe, null, 2));
+    $('body').css('visibility', '');
+    Telegram.WebApp.MainButton
+        .setText('Закрыть веб-просмотр')
+        .hide()
+        .onClick(function () {
+            webviewClose();
+        });
+
+    function toggleMainButton(el) {
+        var mainButton = Telegram.WebApp.MainButton;
+        if (mainButton.isVisible) {
+            mainButton.hide();
+            el.innerHTML = 'Показать кнопку';
+        } else {
+            mainButton.show();
+            el.innerHTML = 'Скрыть кнопку';
+        }
+    }
+
+    var data0 = '1';
+
+    function sendMessage(st){
+        Telegram.WebApp.sendData(st);
+    }
+</script>
+<script>
+    function convert() {
+    var number = document.getElementById("number").value.trim();
+
+    var binary = parseInt(number, 10).toString(2);
+
+    var octal = parseInt(number, 10).toString(8);
+
+    // Без изменений
+    var decimal = number;
+
+    var hexadecimal = parseInt(number, 10).toString(16).toUpperCase();
+
+    document.getElementById("binary").innerHTML = "двоичное: " + binary;
+    document.getElementById("octal").innerHTML = "восьмеричное: " + octal;
+    document.getElementById("decimal").innerHTML = "десятеричное: " + decimal;
+    document.getElementById("hexadecimal").innerHTML = "шестнадцатеричное: " + hexadecimal;
+}
+</script>
+<script>
+    const asciiArt = [
+        "  #####                                                                                                                                                                                                                      ### ",
+        " ##   ##                        ##                                                                                                                                                                                           ### ",
+        "      ## ######   #####      ####    #####   #####  ##   ## ## # ##  ####     #####     #####  ######  ######   #####  ##   ##  ####      ##   ##  #####      #####  ##   ## ##   ## #####    #####    #####  #####  #####   ### ",
+        "   #####   ##    ##   ##    ##      ##   ##      ## ##   ## ## # ##     ##   ##  ##    ##        ##    ##   ## ##   ## ##  ##      ##     ##  ### ##   ##    ##      ##  ### ### ### ##  ##  ##   ##  ##  ## ##   ## ##  ##   #  ",
+        "      ##   ##    ##   ##    ######  ######   #####  ##   ## ## # ##  #####    #####    ##        ##    ######  ##   ## #####    #####     ## # ##    ###     ##      ## # ## ## # ## ######  ##   ##  ##  ## ##   ## ######      ",
+        " ##   ##   ##    ##   ##    ##   ## ##      ##       ###### ## # ## ##  ##   ##  ##    ##        ##    ##      ##   ## ##  ##  ##  ##     ###  ## ##   ##    ##      ###  ## ##   ## ##   ## ##   ##  ##  ## ##   ## ##   ## ### ",
+        "  #####    ##     #####      #####   #####   ######      ## #######  ###### ##   ##     #####    ##    ##       #####  ##   ##  ######    ##   ##  #####      #####  ##   ## ##   ## ######   #####  ##   ##  #####  ######  ### ",
+        "                                                     #####        #                                                                                                                                                              "
+    ];
+    const animationContainer = document.getElementById("animation-container");
+    const animationElement = document.getElementById("animation");
+    const charWidth = 10;
+    let columns = Math.floor((animationContainer.clientWidth + 5) / charWidth)-1; // Определение количества столбцов
+
+    // Установка ширины контейнера анимации и элемента анимации
+    animationContainer.style.width = columns * charWidth + 10 + "px";
+    animationElement.style.width = columns * charWidth + 10 + "px";
+
+
+    let startColumn = 0;
+
+    function runAnimation() {
+        setTimeout(() => {
+            const visiblePart = asciiArt.map(line => {
+                return line.slice(startColumn, startColumn + columns);
+            }).join("\n");
+            animationElement.textContent = visiblePart;
+
+            startColumn = (startColumn + 1) % asciiArt[0].length; // Увеличение номера столбца
+            runAnimation(); // Запуск следующего цикла анимации
+        }, 100);
+    }
+
+    runAnimation();
+</script>
+</html>
