@@ -23,7 +23,8 @@ async def command_webview(message: Message):
             inline_keyboard=[
                 [
                     InlineKeyboardButton(
-                        text="Web", web_app=WebAppInfo(url="https://geodeziy.github.io/W-0723/templates/index.html")
+                        text="Web", web_app=WebAppInfo(
+                            url="https://geodeziy.github.io/computerreferenceBot/templates/index.html")
                     )
                 ]
             ]
