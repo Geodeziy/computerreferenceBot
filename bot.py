@@ -4,7 +4,6 @@ from aiogram.types import Message, WebAppInfo, WebAppData, MenuButtonWebApp, Inl
 from aiogram.utils.keyboard import InlineKeyboardBuilder, ReplyKeyboardBuilder
 from aiogram.enums import ParseMode
 import asyncio
-import os
 import logging
 from settings import TOKEN
 from handlers import start
