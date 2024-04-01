@@ -4,5 +4,6 @@
 
 # ComputerreferenceBot
 
-Telegram бот. Обладает двумя страницами справочника: index.html и index1.html.
+Telegram бот. Обладает двумя страницами справочника: index.html и index1.html.    
+Для начала работы нужно вставить токен от бота в `settings.py`.
 
