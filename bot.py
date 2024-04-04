@@ -186,7 +186,7 @@ async def encode(message: Message, command: CommandObject):
                 await message.answer(s)
 
     except Exception as e:
-        await message.answer(e)
+        await message.answer(str(e))
 
 
 # Функция кодирует переданную строку в шестнадцатеричный формат.
@@ -206,7 +206,7 @@ async def encode16(message: Message, command: CommandObject):
                 await message.answer(s)
 
     except Exception as e:
-        await message.answer(e)
+        await message.answer(str(e))
 
 
 @dp.message(Command('help'))
